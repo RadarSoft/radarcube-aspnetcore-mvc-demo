@@ -1,0 +1,21 @@
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div>
+    <h1>RadarCube for ASP.NET Core MVC</h1>
+    <radar-cube callback-controller="RadarCube" 
+                callback-action="CallbackHandler"
+                export-controller="RadarCube"
+                export-action="ExportHandler"
+                max-text-length=20
+                height="500px"  
+                hierarchies-display-mode="TableLike"
+                use-fixed-headers="false"
+                show-modification-areas="false" 
+                show-legends="false" 
+                connection-string="Data Source=http://localhost/OLAP/msmdpump.dll;Initial Catalog=AdventureWorksDW2012Multidimensional-SE;Connect Timeout=30;Persist Security Info=True;User ID=RUMEX\stepanov;Password=rumex1"
+                cube-name="Adventure Works"
+                active="true"></radar-cube>
+</div>
+
