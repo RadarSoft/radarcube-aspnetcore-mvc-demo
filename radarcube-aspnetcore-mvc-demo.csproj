@@ -11,12 +11,13 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.2.2" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.2" />
+    <PackageReference Include="RadarSoft.RadarCube.OlapAnalysis" Version="1.0.0-beta" />
   </ItemGroup>
 
 
   <ItemGroup>
-    <ProjectReference Include="..\radarcube-olapanalysis\src\OlapAnalysis.NetCore.csproj" />
-    <ProjectReference Include="..\radarcube-xmlaclient\src\XmlaClient.NetCore.csproj" />
+    <None Include="Views\Olap\Index.cshtml" />
+    <None Include="Views\RadarCube\Index.cshtml" />
   </ItemGroup>
 
 
