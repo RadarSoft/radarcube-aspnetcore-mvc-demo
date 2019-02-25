@@ -7,11 +7,18 @@
     <TypeScriptToolsVersion>2.3</TypeScriptToolsVersion>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="wwwroot\Temp\**" />
+    <Content Remove="wwwroot\Temp\**" />
+    <EmbeddedResource Remove="wwwroot\Temp\**" />
+    <None Remove="wwwroot\Temp\**" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.2.2" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.2" />
-    <PackageReference Include="RadarSoft.RadarCube.OlapAnalysis" Version="1.0.0-beta" />
+    <PackageReference Include="RadarSoft.RadarCube.OlapAnalysis" Version="1.0.0-alpha" />
   </ItemGroup>
 
 
