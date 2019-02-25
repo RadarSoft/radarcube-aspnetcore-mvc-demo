@@ -28,14 +28,11 @@ namespace radarcube_aspnetcore_mvc_demo.TagHelpers
             base.Init();
             LinesInPage = 5;
             PivotingBehavior = PivotingBehavior.RadarCube;
-            //BeginUpdate();
-            //PivotingFirst(Dimensions.FindHierarchy("[Product].[Category]"), LayoutArea.laRow);
-            //PivotingFirst(Dimensions.FindHierarchy("[Date].[Fiscal Year]"), LayoutArea.laColumn);
-            //PivotingFirst(Dimensions.FindHierarchy("[Customer].[Customer Geography]"), LayoutArea.laRow);
-            //Pivoting(Measures.Find("[Measures].[Internet Sales-Unit Price]"), LayoutArea.laRow, null);
-            //var m = Measures.Find("[Measures].[UnitPrice]");
-            //Pivoting(m);
-            //EndUpdate();
+            BeginUpdate();
+            PivotingFirst(Dimensions.FindHierarchy("[Product].[Product Categories]"), LayoutArea.laRow);
+            PivotingFirst(Dimensions.FindHierarchy("[Date].[Fiscal Year]"), LayoutArea.laColumn);
+            Pivoting(Measures.Find("[Measures].[Sales Amount]"), LayoutArea.laRow, null);
+            EndUpdate();
         }
     }
 }
