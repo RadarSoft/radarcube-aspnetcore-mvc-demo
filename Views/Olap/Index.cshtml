@@ -2,19 +2,20 @@
     ViewData["Title"] = "Index";
 }
 
-<div>
+<div style="padding: 0 20px 0 20px">
     <h1>RadarCube for ASP.NET Core MVC (Connecting to Telerik data source)</h1>
     <olap callback-controller="Olap"
                 callback-action="CallbackHandler"
                 export-controller="Olap"
                 export-action="ExportHandler"
                 max-text-length=20
-                height="400px"
+                width="1000px"
+                height="700px"
                 hierarchies-display-mode="TreeLike"
                 use-fixed-headers="false"
                 show-modification-areas="false"
                 show-legends="false"
-                connection-string="Data Source=https://demos.telerik.com/olap/msmdpump.dll;Initial Catalog=Adventure Works DW 2008R2;Connect Timeout=30"
+                connection-string="Data Source=https://demos.telerik.com/olap/msmdpump.dll;Initial Catalog=Adventure Works DW 2008R2"
                 cube-name="Adventure Works"
                 active="true"></olap>
 </div>

@@ -38,7 +38,7 @@ namespace radarcube_aspnetcore_mvc_demo
             services.AddSession(options =>
             {
                 // Set a short timeout for easy testing.
-                options.IdleTimeout = TimeSpan.FromSeconds(10);
+                //options.IdleTimeout = TimeSpan.FromSeconds(10);
                 options.Cookie.HttpOnly = true;
             });
 
@@ -85,7 +85,7 @@ namespace radarcube_aspnetcore_mvc_demo
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=RadarCube}/{action=Index}/{id?}");
+                    template: "{controller=Olap}/{action=Index}/{id?}");
             });
         }
     }
